@@ -1,17 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HelloWorld from '../components/HelloWorld.vue'
-import SnakeGame from '../components/SnakeGame.vue'
+//import HelloWorld from '../components/HelloWorld.vue'
+//import SnakeGame from '../components/SnakeGame.vue'
+import MainLayout from '../views/MainLayout.vue'
 
+// router/index.js
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: HelloWorld
-  },
-  {
-    path: '/snake',
-    name: 'SnakeGame',
-    component: SnakeGame
+    path: '/inventory',
+    component: MainLayout,
+    //redirect: '/inventory/dashboard' // 添加默认重定向
+    
   }
 ]
 
