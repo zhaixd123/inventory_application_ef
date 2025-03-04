@@ -1,5 +1,5 @@
 # 从 nginx 镜像开始构建
-FROM nginx
+FROM registry.cn-hangzhou.aliyuncs.com/library/nginx
 
 # 将项目根目录下的 dist 目录中的内容复制到容器的 /usr/share/nginx/html 目录中，作为静态文件目录
 COPY ./dist /usr/share/nginx/html
