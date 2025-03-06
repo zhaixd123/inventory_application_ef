@@ -1,16 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-//import HelloWorld from '../components/HelloWorld.vue'
-//import SnakeGame from '../components/SnakeGame.vue'
-import MainLayout from '../views/MainLayout.vue'
+import Home from '../views/Home.vue' // 确保这个路径正确指向你的 Home.vue 文件
+import Dashboard from '../views/Dashboard.vue' // 假设你有一个 Dashboard.vue 在 views 文件夹中
+import Inventory from '../views/Inventory.vue' // 假设你有一个 Inventory.vue 在 views 文件夹中
 
-// router/index.js
 const routes = [
   {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+  },
+  {
     path: '/inventory',
-    component: MainLayout,
-    //redirect: '/inventory/dashboard' // 添加默认重定向
-    
-  }
+    name: 'Inventory',
+    component: Inventory
+  },
+  // 其他路由...
 ]
 
 const router = createRouter({
